@@ -22,10 +22,12 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#story">Story</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#awards">Awards</a></li>
+
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -34,117 +36,88 @@
     <main>
         <!-- Hero -->
         <section id="hero" class="section hero" data-section>
-            <div class="hero-inner">
-                <p class="hero-tagline">Share the Vision, One Team!</p>
-                <h1 class="hero-title">김효정 · Communicator PM</h1>
-                <p class="hero-subtitle">
-                    기획자-개발자 간의 경계에서 다리가 되어<br />
-                    다양한 관점을 연결하는 커뮤니케이터 PM, 김효정입니다.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn primary">Projects</a>
-                    <a href="#story" class="btn ghost">Story</a>
+            <div class="hero-layout">
+                <!-- ✅ 왼쪽: 아바타 -->
+                <div class="hero-avatar">
+                    <img src="assets/character.png" alt="김효정 아바타" />
+                </div>
+
+                <!-- ✅ 오른쪽: 기존 텍스트 -->
+                <div class="hero-inner">
+                    <p class="hero-tagline">Share the Vision, One Team!</p>
+                    <h1 class="hero-title">김효정 · Product-minded Developer</h1>
+                    <p class="hero-subtitle">
+                        사용자 경험, 데이터, 개발을 함께 보는 사람입니다.<br />
+                        프론트엔드와 프로토타입 구현, 리서치·시장조사까지 연결하며
+                        복잡한 문제를 구조적으로 풀어가는 걸 좋아해요.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">Projects</a>
+                        <a href="#skills" class="btn ghost">Skills</a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- Story / Who Am I? -->
-        <section id="story" class="section" data-section>
+        <section id="skills" class="section" data-section>
             <div class="section-inner">
                 <div class="section-heading">
-                    <span class="section-emoji">🔍</span>
+                    <span class="section-emoji">🛠️</span>
                     <div>
-                        <h2 class="section-title">Who Am I?</h2>
+                        <h2 class="section-title">Skills</h2>
                         <div class="section-divider"></div>
                     </div>
                 </div>
 
-                <!-- 1. 끊임없이 "왜?"를 묻는 PM -->
-                <article class="story-block">
-                    <h3 class="story-title">1. 끊임없이 “왜?”를 묻는 PM, 김효정입니다.</h3>
-                    <p class="story-body">
-                        <!-- 여기에 노션 1번 스토리 본문 그대로 복붙 -->
-                        간호사-환자 간 소통 문제를 발견하고 “왜 이런 상황이 반복될까?”라는 질문에서
-                        시작해 문제를 구조적으로 정의하고 재정의했던 경험을 담는 부분.
-                    </p>
+                <div class="skill-cards">
 
-                    <div class="story-what-i-learned">
-                        <div class="pill-label">What I learned?</div>
-                        <ul>
-                            <li>문제를 구조적으로 정의하고 논리를 쌓아가는 과정에서 즐거움을 느꼈다는 점.</li>
-                            <li>이해관계자 간 Pain Point 균형을 잡는 것이 솔루션 설계의 핵심이라는 점.</li>
-                            <!-- 나머지 bullet 노션에서 복붙 -->
+                    <!-- Strategy -->
+                    <article class="skill-card">
+                        <h3 class="skill-title">📊 Strategy & Business</h3>
+                        <ul class="skill-list">
+                            <li>시장 조사 · 경쟁사 분석</li>
+                            <li>B2B 고객 니즈 분석</li>
+                            <li>제휴 구조 설계 · 사업 구조화</li>
+                            <li>전략 문서 · 제안서 작성</li>
                         </ul>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- 2. 직접 뛰어드는 PM -->
-                <article class="story-block">
-                    <h3 class="story-title">2. 직접 뛰어드는 PM, 김효정입니다.</h3>
-                    <p class="story-body">
-                        <!-- 노션 2번 텍스트 복붙 -->
-                        기획자와 개발자 사이의 브릿지가 되기 위해 CS 지식을 채우고,
-                        실제 웹 개발 프로젝트에서 프론트엔드 역할을 맡았던 경험들.
-                    </p>
-
-                    <div class="story-what-i-learned">
-                        <div class="pill-label">What I learned?</div>
-                        <ul>
-                            <li>기획과 개발 간 간극을 줄이려면 기술 관점의 문제 정의가 중요하다는 점.</li>
-                            <li>API 사용 가능 여부 등 기술 제약이 기획 방향을 완전히 바꿀 수 있다는 점.</li>
+                    <!-- Technical -->
+                    <article class="skill-card">
+                        <h3 class="skill-title">💻 Technical</h3>
+                        <ul class="skill-list">
+                            <li>HTML · CSS · JavaScript · GSAP</li>
+                            <li>React · Next.js 기반 웹 개발</li>
+                            <li>LLM 기반 서비스 설계 경험</li>
+                            <li>기술적 제약 분석 · 구현 가능성 판단</li>
                         </ul>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- 3. One Team!을 꿈꾸는 PM -->
-                <article class="story-block">
-                    <h3 class="story-title">3. One Team!을 꿈꾸는 PM, 김효정입니다.</h3>
-                    <p class="story-body">
-                        <!-- 노션 3번 텍스트 복붙 -->
-                        300명 이상이 참여한 행사에서 회장으로 활동하며
-                        비전 공유·협업·커뮤니케이션의 중요성을 체감한 이야기.
-                    </p>
-
-                    <div class="story-what-i-learned">
-                        <div class="pill-label">What I learned?</div>
-                        <ul>
-                            <li>비전 공유와 맥락 설명이 팀을 한 방향으로 움직이게 만든다는 점.</li>
-                            <li>PM이 사용자 경험 뿐 아니라 팀 경험도 설계해야 한다는 점.</li>
+                    <!-- Research -->
+                    <article class="skill-card">
+                        <h3 class="skill-title">🔍 Research & Analysis</h3>
+                        <ul class="skill-list">
+                            <li>사용자 인터뷰 · 페르소나 도출</li>
+                            <li>인사이트 분석 · 구조화</li>
+                            <li>실험 설계 · UX 리서치</li>
+                            <li>데이터 기반 기획</li>
                         </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
+                    </article>
 
-        <!-- About me (GitHub 카드 + 사진) -->
-        <section id="about" class="section" data-section>
-            <div class="section-inner">
-                <div class="section-heading">
-                    <span class="section-emoji">🦊</span>
-                    <div>
-                        <h2 class="section-title">About me</h2>
-                        <div class="section-divider"></div>
-                    </div>
-                </div>
+                    <!-- Communication -->
+                    <article class="skill-card">
+                        <h3 class="skill-title">🤝 Communication</h3>
+                        <ul class="skill-list">
+                            <li>부서 협업 · 이해관계 조율</li>
+                            <li>비전 공유 · 맥락 설명</li>
+                            <li>프로젝트 리딩 · 일정 운영</li>
+                            <li>파트너 커뮤니케이션</li>
+                        </ul>
+                    </article>
 
-                <div class="about-layout">
-                    <div class="about-card">
-                        <h3 class="about-title">Kimhyojung – github</h3>
-                        <p class="about-text">
-                            GitHub에서 진행한 프로젝트들을 확인할 수 있어요.
-                        </p>
-                        <a href="https://github.com/Kimhyojung0810" target="_blank" class="btn ghost">
-                            GitHub로 가기
-                        </a>
-                    </div>
-
-                    <div class="about-photo">
-                        <!-- 프로필 이미지 경로로 교체 -->
-                        <img src="assets/character.png" alt="김효정 프로필 사진" />
-                    </div>
                 </div>
             </div>
         </section>
+
 
         <!-- Projects -->
         <section id="projects" class="section" data-section>
@@ -158,37 +131,57 @@
                 </div>
 
                 <p class="section-text">프로젝트 포트폴리오</p>
-
                 <div class="cards">
-                    <!-- 노션 첫 번째 카드 -->
+                    <!-- 카드 1 -->
                     <article class="card">
                         <p class="card-tag">다회용기 서비스 디자인</p>
                         <h3 class="card-title">“또그릇” - 다회용기 플렛폼 비즈니스 제안</h3>
                         <p class="card-desc">
-                            <!-- 한 줄 설명 -->
                             다회용기 배달 및 수거/세척 통합 플랫폼
                         </p>
-                        <a href="https://skkuhyojung.notion.site/2b33fb2c8391802ebefaeb470fcb7b5f?source=copy_link"
+                        <a href="https://skkuhyojung.notion.site/2bd3fb2c8391810ea38aca21220e1ebc?source=copy_link"
                             target="_blank" class="card-link">View detail →</a>
                     </article>
 
-                    <!-- 두 번째 카드 -->
+                    <!-- 카드 2 -->
                     <article class="card">
                         <p class="card-tag">Healthcare · AI</p>
                         <h3 class="card-title">환자 호출 응답 서비스</h3>
                         <p class="card-desc">
                             일반병동 간호사의 강점노동 문제를 해결하기 위한 환자 호출 응답 서비스.
                         </p>
-                        <a href="https://skkuhyojung.notion.site/8bb30399de174cdab8e228d05b79fae2?source=copy_link"
+                        <a href="https://skkuhyojung.notion.site/2bd3fb2c8391815db86bff178f95be8c?source=copy_link"
                             target="_blank" class="card-link">View detail →</a>
                     </article>
 
-                    <!-- 나머지 프로젝트도 노션 카드 순서대로 추가 -->
-                </div>
-            </div>
-        </section>
+                    <!-- 카드 3  -->
+                    <article class="card">
+                        <p class="card-tag">Data-driven Marketing · UX</p>
+                        <h3 class="card-title">Fitness Plus – 데이터 기반 운동 서비스 기획</h3>
+                        <p class="card-desc">
+                            정성·정량 데이터를 연결해 운동 동기 구조를 분석하고
+                            Fitness Plus의 핵심 기능과 UX를 설계한 프로젝트.
+                        </p>
+                        <a href="https://skkuhyojung.notion.site/Fitness-Plus-2bd3fb2c83918113b799fd89ff2c120f?source=copy_link"
+                            target="_blank" class="card-link">View detail
+                            →</a>
+                    </article>
 
-        <!-- Experience (위 스샷: F1 & 성균관) -->
+                    <!-- 카드 4 -->
+                    <article class="card">
+                        <p class="card-tag">Generative AI · Healthcare</p>
+                        <h3 class="card-title">다랑해 – 생성형 AI 치매 예방 서비스</h3>
+                        <p class="card-desc">
+                            일기 데이터를 기반으로 맞춤 인지 퀴즈와 AI 편지를 제공해
+                            고령층과 자녀 세대의 일상을 연결하는 치매 예방 서비스.
+                        </p>
+                        <a href="https://skkuhyojung.notion.site/AI-Fine-Tuning-KAPS-2bd3fb2c839181d0b6d3c8da55a9fbdd?source=copy_link"
+                            target="_blank" class="card-link">View detail →</a>
+                    </article>
+                </div>
+
+        </section>
+        <!-- Experience -->
         <section id="experience" class="section" data-section>
             <div class="section-inner">
                 <div class="section-heading">
@@ -199,26 +192,87 @@
                     </div>
                 </div>
 
-                <!-- Formula 1 & 연구 -->
+                <!-- Human-AI Interaction Lab -->
                 <article class="exp-block">
-                    <h3 class="exp-title">🏎️ Formula 1(F1) & 연구</h3>
+                    <h3 class="exp-title">Human-AI Interaction Lab 학부연구생</h3>
+                    <p class="exp-meta">2025. 8 – 현재</p>
                     <ul class="exp-list">
-                        <li>F1의 One Team 문화에 매료되어 2번의 직관을 다녀왔습니다.</li>
-                        <li>F1 최적 피트스탑 전략 연구를 진행하며 강화학습 모델을 개발하고 있습니다.</li>
+                        <li>시니어 대상 음성 에이전트 서비스 기획 및 와이어프레임 제작.</li>
+                        <li>차량 세일즈 에이전트 사용자 인터뷰 및 설문 설계, 정성·정량 데이터 분석에 참여.</li>
                     </ul>
                 </article>
 
-                <!-- 성균관으로 뛰어다닌 3년 -->
+                <!-- 툰라이즈 인턴 -->
                 <article class="exp-block">
-                    <h3 class="exp-title">🏫 성균인으로 뛰어다닌 3년</h3>
+                    <h3 class="exp-title">툰라이즈 학생 인턴</h3>
+                    <p class="exp-meta">2023. 9 – 2023. 12</p>
                     <ul class="exp-list">
-                        <li>
-                            성균관대 56대 총학생회 대외협력국 차장으로 활동하며 6개 부동산 제휴,
-                            54개 식당 SKKU PASS 제휴, 법무법인 테헤란과 주거지원 패키지 계약을 성사시켰습니다.
-                        </li>
-                        <li>상대·학생·학교의 니즈를 모두 고려하며 이해관계자 관점에서 문제를 구조적으로 정의하고 해결하는 역량을 키웠습니다.</li>
+                        <li>웹 서비스 개편을 위한 사용자 흐름 구조화 및 기획 참여.</li>
+                        <li>운영진과 협업하며 요구사항 정의·우선순위 논의 경험.</li>
                     </ul>
-                    <!-- 필요하면 SKKU PASS란? 토글 섹션도 JS로 나중에 만들 수 있음 -->
+                </article>
+
+                <!-- SKKUDING 프론트엔드 -->
+                <article class="exp-block">
+                    <h3 class="exp-title">SKKUDING 프론트엔드 개발팀</h3>
+                    <p class="exp-meta">2024. 3 – 현재</p>
+                    <ul class="exp-list">
+                        <li>코드당 웹 서비스 UI 구현 및 기능 개발, 유지보수 담당.</li>
+                        <li>인터랙션·성능 개선 및 리팩토링 수행.</li>
+                    </ul>
+                </article>
+
+                <!-- 리더십/학생회  -->
+                <article class="exp-block">
+                    <h3 class="exp-title">캠퍼스 리더십 & 운영</h3>
+                    <p class="exp-meta">2022. 3 – 2024. 12</p>
+                    <ul class="exp-list">
+                        <li>성균관대 제56대 총학생회 대외협력국 차장으로 자취생 주거지원 패키지·간식 배부 사업 총괄.</li>
+                        <li>유생문화기획단 청랑 9기 회장으로 전통문화 축제 ‘고하노라’ 기획 및 300명 규모 행사 운영.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards" class="section" data-section>
+            <div class="section-inner">
+                <div class="section-heading">
+                    <span class="section-emoji">🏆</span>
+                    <div>
+                        <h2 class="section-title">Awards</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+
+                <!-- 주요 수상 -->
+                <article class="exp-block">
+                    <h3 class="exp-title">Google Award – 치매 예방 AI 서비스 ‘다랑해’</h3>
+                    <p class="exp-meta">2024</p>
+                    <ul class="exp-list">
+                        <li>Gemini 기반 치매 예방 AI 서비스 ‘다랑해’ 기획 및 프로토타입 제작.</li>
+                        <li>논리구조 작성/서비스 구체화 및 프롬프트 엔지니어링 담당</li>
+                    </ul>
+                </article>
+
+
+                <article class="exp-block">
+                    <h3 class="exp-title">성균관대학교 AI·SW 관련 공모전 및 프로젝트</h3>
+                    <p class="exp-meta">2022 – 2024</p>
+                    <ul class="exp-list">
+                        <li>AI 기반 서비스 기획으로 대상(1st), 최우수상(2nd) 2년 연속 수상.</li>
+                        <li>데이터·UX 관점을 결합한 서비스 시나리오 설계 경험.</li>
+                    </ul>
+                </article>
+
+                <!-- 기타 수상 요약 -->
+                <article class="exp-block">
+                    <h3 class="exp-title">그 외 주요 수상</h3>
+                    <ul class="exp-list">
+                        <li>건양대 헬스케어 창의 아이디어캠프 최우수상.</li>
+                        <li>한국지도자육성장학재단 54기 장학생·대표 장학생 선정.</li>
+                        <li>성균관대 학생성공리더장학금 4회 등.</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -243,29 +297,43 @@
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact" class="section" data-section>
+
+
+
+        <!-- Contact me -->
+        <section id="Contact" class="section" data-section>
             <div class="section-inner">
                 <div class="section-heading">
-                    <span class="section-emoji">👋</span>
+                    <span class="section-emoji">🦊</span>
                     <div>
                         <h2 class="section-title">Contact</h2>
                         <div class="section-divider"></div>
                     </div>
                 </div>
 
-                <ul class="contact-list">
-                    <li>
-                        <span>📧 Email</span>
-                        <a href="mailto:jenny0308@g.skku.edu">jenny0308@g.skku.edu</a>
-                    </li>
-                    <li>
-                        <span>📞 Phone</span>
-                        <a href="tel:+821027779446">+82 10-2777-9446</a>
-                    </li>
-                </ul>
+                <div class="about-layout">
+                    <div class="about-card">
+                        <h3 class="about-title">Kimhyojung</h3>
+                        <p class="about-text">
+                            GitHub와 LinkedIn을 통해 연락하실 수 있습니다.
+                        </p>
+
+                        <div class="about-links">
+                            <a href="https://github.com/Kimhyojung0810" target="_blank" class="btn ghost">
+                                GitHub
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/hyojung-kim-b968612b7" target="_blank"
+                                class="btn ghost secondary">
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">

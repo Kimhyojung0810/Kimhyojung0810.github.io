@@ -1,4 +1,3 @@
-/* 기본 세팅 */
 *,
 *::before,
 *::after {
@@ -14,7 +13,6 @@ body {
   line-height: 1.6;
 }
 
-/* 레이아웃 공통 */
 .section {
   padding: 80px 20px;
 }
@@ -29,7 +27,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* 헤더 / 네비게이션 */
 .header {
   position: fixed;
   top: 0;
@@ -74,7 +71,6 @@ body {
   border-color: #ffffff;
 }
 
-/* Hero 섹션 */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -84,7 +80,7 @@ body {
 .hero-inner {
   max-width: 960px;
   margin: 0 auto;
-  padding-top: 64px; /* fixed header 만큼 여백 */
+  padding-top: 64px;
 }
 
 .hero-tagline {
@@ -111,7 +107,6 @@ body {
   gap: 12px;
 }
 
-/* 버튼 스타일 */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -140,17 +135,15 @@ body {
   transform: translateY(-1px);
 }
 
-/* 섹션 텍스트 */
 .section-text {
   color: #d0d0e0;
   max-width: 640px;
 }
 
-/* 카드 레이아웃 (프로젝트용) */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .card {
@@ -183,7 +176,6 @@ body {
   color: #9ea4ff;
 }
 
-/* 경험 Timeline */
 .timeline {
   display: flex;
   flex-direction: column;
@@ -210,7 +202,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Contact */
 .contact-list {
   list-style: none;
   padding: 0;
@@ -237,7 +228,6 @@ body {
   text-decoration: underline;
 }
 
-/* Footer */
 .footer {
   padding: 24px 20px 40px;
   text-align: center;
@@ -262,7 +252,6 @@ body {
   }
 }
 
-/* 섹션 헤딩 */
 .section-heading {
   display: flex;
   align-items: center;
@@ -281,7 +270,6 @@ body {
   background: rgba(255, 255, 255, 0.16);
 }
 
-/* Story 블록 + What I learned 박스 */
 .story-block {
   margin-bottom: 32px;
   padding: 20px;
@@ -324,29 +312,118 @@ body {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* About me 레이아웃 */
 .about-layout {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
-  gap: 24px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 32px;
+  margin-top: 28px;
+  align-items: stretch;
 }
 
 .about-card {
-  padding: 20px;
-  border-radius: 16px;
-  background: #151521;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 24px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
 }
 
 .about-photo img {
-  width: 100%;
-  max-width: 260px;
-  border-radius: 20px;
   display: block;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 28px;
+  object-fit: cover;
 }
 
-/* Experience / How I work 리스트 */
+@media (max-width: 768px) {
+  .about-layout {
+    max-width: 620px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-layout {
+    max-width: 620px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about-card {
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-github-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .github-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+  }
+
+  .about-label {
+    font-size: 12px;
+    opacity: 0.7;
+    margin: 0 0 2px 0;
+  }
+
+  .about-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .about-text {
+    margin: 0;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  .about-card .full-width {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-photo {
+    justify-content: flex-start;
+    margin-top: 16px;
+  }
+
+  .about-photo img {
+    max-width: 260px;
+  }
+}
+
 .exp-block {
   margin-bottom: 24px;
 }
@@ -371,7 +448,6 @@ body {
   margin-bottom: 6px;
 }
 
-/* 반응형 about */
 @media (max-width: 720px) {
   .about-layout {
     grid-template-columns: 1fr;
@@ -388,7 +464,120 @@ body {
   border-radius: 16px;
   background: #151521;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  /* 추가 */
-  transform: translateY(0); /* 기준값 */
+  transform: translateY(0);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.skill-card {
+  padding: 18px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  min-height: 180px;
+  line-height: 1.55;
+}
+
+.skill-title {
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.skill-list li {
+  margin-bottom: 10px;
+  font-size: 14.5px;
+  opacity: 0.9;
+}
+
+.skill-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .skill-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.exp-meta {
+  font-size: 13px;
+  opacity: 0.7;
+  margin: 4px 0 8px;
+}
+
+.exp-block + .exp-block {
+  margin-top: 20px;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: flex-end;
+  gap: 48px;
+
+  max-width: 1120px;
+  margin: 0 auto;
+
+  width: 100%;
+  padding-inline: 24px;
+}
+
+.hero-avatar img {
+  display: block;
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.hero-inner {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero-avatar img {
+    width: 180px;
+    height: 230px;
+  }
+}
+
+.about-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn.ghost.secondary {
+  opacity: 0.85;
+}
+
+.btn.ghost.secondary:hover {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

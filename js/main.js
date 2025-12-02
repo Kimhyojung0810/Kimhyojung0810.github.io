@@ -1,9 +1,9 @@
 // js/main.js
 
-// GSAP 플러그인 등록
+// GSAP 플러그인
 gsap.registerPlugin(ScrollTrigger);
 
-// 초기 로드 애니메이션 (Hero & 네비)
+// 초기 로드 애니메이션
 window.addEventListener("load", () => {
   gsap.from(".logo", {
     duration: 0.8,
@@ -56,7 +56,6 @@ window.addEventListener("load", () => {
 
 // 섹션 스크롤 등장 애니메이션
 gsap.utils.toArray("[data-section]").forEach((section) => {
-  // hero는 스크롤 애니 제외하고 싶으면 조건 걸어도 됨
   if (section.id === "hero") return;
 
   gsap.from(section, {
@@ -80,7 +79,7 @@ document.querySelectorAll('.nav-list a[href^="#"]').forEach((link) => {
     const target = document.getElementById(targetId);
     if (!target) return;
 
-    const headerOffset = 64; // fixed header 높이
+    const headerOffset = 64;
     const rect = target.getBoundingClientRect();
     const offset = rect.top + window.scrollY - headerOffset + 1;
 
@@ -90,11 +89,10 @@ document.querySelectorAll('.nav-list a[href^="#"]').forEach((link) => {
     });
   });
 });
-// 카드 호버 인터랙션 (살짝 떠오르기 + 그림자)
 const cards = document.querySelectorAll(".card");
 
 cards.forEach((card) => {
-  // 기준점 설정 (가운데 기준으로 살짝 떠오르게)
+  // 기준점 설정
   gsap.set(card, { transformOrigin: "center center" });
 
   card.addEventListener("mouseenter", () => {
@@ -118,4 +116,40 @@ cards.forEach((card) => {
       ease: "power2.out",
     });
   });
+});
+
+const skillCards = document.querySelectorAll(".skill-card");
+
+skillCards.forEach((card) => {
+  gsap.set(card, { transformOrigin: "center center" });
+
+  card.addEventListener("mouseenter", () => {
+    gsap.to(card, {
+      duration: 0.25,
+      y: -6,
+      scale: 1.03,
+      boxShadow: "0 14px 30px rgba(0, 0, 0, 0.45)",
+      borderColor: "rgba(255, 255, 255, 0.18)",
+      ease: "power2.out",
+    });
+  });
+
+  card.addEventListener("mouseleave", () => {
+    gsap.to(card, {
+      duration: 0.25,
+      y: 0,
+      scale: 1,
+      boxShadow: "0 0 0 rgba(0,0,0,0)",
+      borderColor: "rgba(255,255,255,0.06)",
+      ease: "power2.out",
+    });
+  });
+});
+
+gsap.from(".hero-avatar img", {
+  duration: 0.9,
+  x: -30,
+  opacity: 0,
+  delay: 0.2,
+  ease: "power3.out",
 });
